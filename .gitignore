@@ -60,3 +60,4 @@ mongod
 *.swp
 logs/
 build/
+test/results
