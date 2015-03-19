@@ -143,6 +143,20 @@ module.exports = function(grunt) {
 			unit: {
 				configFile: 'karma.conf.js'
 			}
+		},
+		shell: {
+			options:{
+				stdout: true
+			},
+			npm_install: {
+				command: 'npm install'
+			},
+			bower_install: {
+				command: 'bower install'
+			},
+			protractor_install: {
+				command: './node_modules/.bin/webdriver-manager update'
+			}
 		}
 	});
 
@@ -180,4 +194,6 @@ module.exports = function(grunt) {
 	grunt.registerTask('test', ['test:server', 'test:client']);
 	grunt.registerTask('test:server', ['env:test', 'mochaTest']);
 	grunt.registerTask('test:client', ['env:test', 'karma:unit']);
+	grunt.registerTask('install', ['shell:npm_install', 'shell:bower_install', 'shell:protractor_install']);
+
 };

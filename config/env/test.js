@@ -8,7 +8,7 @@ module.exports = {
 			pass: ''
 		}
 	},
-	port: 3001,
+	port: 3000,
 	log: {
 		// Can specify one of 'combined', 'common', 'dev', 'short', 'tiny'
 		format: 'dev',

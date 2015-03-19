@@ -1,6 +1,8 @@
+var repo = require('../elementRepo.js');
+
 describe('user', function (){
   beforeEach(function() {
-    browser.get('http://localhost:3000')
+    browser.get('https://shrouded-gorge-4968.herokuapp.com/#!/')
   });
   afterEach(function() {
 
