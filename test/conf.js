@@ -8,12 +8,12 @@
 
 exports.config = {
 
-  // seleniumServerJar: '../node_modules/protractor/selenium/selenium-server-standalone-2.45.0.jar',
+  seleniumServerJar: '../node_modules/protractor/selenium/selenium-server-standalone-2.45.0.jar',
   //
-  // chromeDriver: '../node_modules/protractor/selenium/chromedriver',
+  chromeDriver: '../node_modules/protractor/selenium/chromedriver',
 
-  sauceUser: 'peterhendrickoss',
-  sauceKey: 'f255c676-818d-4162-973a-19f0be5274f2',
+  // sauceUser: 'peterhendrickoss',
+  // sauceKey: 'f255c676-818d-4162-973a-19f0be5274f2',
   //
   // sauceSeleniumAddress: null,
 
@@ -34,8 +34,8 @@ exports.config = {
   // },
 
   capabilities: {
-    'browserName': 'chrome'
-    // 'browserName': 'firefox'
+    // 'browserName': 'chrome'
+    'browserName': 'firefox'
     // 'browserName': 'safari'
 
     // When using phantomjs, you need to include the binary.
