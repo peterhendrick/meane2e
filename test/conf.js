@@ -27,31 +27,31 @@ exports.config = {
   //   full: 'spec/*.js'
   // },
 
-  // capabilities: {
-  //   'browserName': 'chrome'
-  //   // 'browserName': 'firefox'
-  //   // 'browserName': 'safari'
-  //
-  //
-  //   // // When using phantomjs, you need to include the binary.
-  //   // 'browserName': 'phantomjs',
-  //   // 'phantomjs.binary.path': './node_modules/phantomjs2/bin/phantomjs',
-  // },
+  capabilities: {
+    // 'browserName': 'chrome'
+    // 'browserName': 'firefox'
+    // 'browserName': 'safari'
 
-  multiCapabilities: [
-    {
-      'browserName': 'chrome',
-    },
-    {
-      'browserName': 'firefox',
-    },
 
-    // When using phantomjs, you need to include the binary.
-    {
-      // 'browserName': 'phantomjs',
-      // 'phantomjs.binary.path': './node_modules/phantomjs/bin/phantomjs',
-    }
-  ],
+    // // When using phantomjs, you need to include the binary.
+    'browserName': 'phantomjs',
+    'phantomjs.binary.path': './node_modules/phantomjs2/bin/phantomjs',
+  },
+
+  // multiCapabilities: [
+  //   {
+  //     'browserName': 'chrome',
+  //   },
+  //   {
+  //     'browserName': 'firefox',
+  //   },
+  //
+  //   // When using phantomjs, you need to include the binary.
+  //   {
+  //     // 'browserName': 'phantomjs',
+  //     // 'phantomjs.binary.path': './node_modules/phantomjs/bin/phantomjs',
+  //   }
+  // ],
 
   // maxSessions: -1,
 
