@@ -12,6 +12,7 @@ describe('user', function (){
   it('should be able to sign up and recieve a message', function () {
     browser.waitForAngular();
     element(by.id('signUp')).click();
+    // Type something here
     element(by.id('firstName')).sendKeys('user');
     element(by.id('lastName')).sendKeys('name');
     element(by.id('email')).sendKeys('usera@name.com');
