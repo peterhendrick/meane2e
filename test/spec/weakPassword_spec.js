@@ -12,7 +12,7 @@ describe('user', function (){
   it('should be able to sign up and recieve a message', function () {
     browser.waitForAngular();
     element(by.id('signUp')).click();
-    // Type something here
+
     element(by.id('firstName')).sendKeys('user');
     element(by.id('lastName')).sendKeys('name');
     element(by.id('email')).sendKeys('usera@name.com');
@@ -34,9 +34,15 @@ describe('user', function (){
 //   it('should be able to sign up and recieve a message', function () {
 //     browser.waitForAngular();
 //     repo.signUpHeaderButton.click();
+<<<<<<< HEAD
 //     element(by.id('firstName')).sendKeys('user');
 //     element(by.id('lastName')).sendKeys('name');
 //     element(by.id('email')).sendKeys('usera@name.com');
+=======
+//     repo.firstName.sendKeys('user');
+//     repo.lastName.sendKeys('name');
+//     repo.email.sendKeys('usera@name.com');
+>>>>>>> develop
 //     element(by.id('username')).sendKeys('username');
 //     element(by.id('password')).sendKeys('pass');
 //     element(by.id('submitButton')).click();
