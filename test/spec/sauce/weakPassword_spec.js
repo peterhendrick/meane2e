@@ -1,6 +1,6 @@
 describe('user signup', function (){
   beforeEach(function() {
-    browser.get('http://localhost:3000')
+    browser.get('https://meane2e.herokuapp.com/#!/')
     browser.waitForAngular();
   });
   afterEach(function() {

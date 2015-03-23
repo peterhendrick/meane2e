@@ -6,15 +6,8 @@ exports.config = {
 
   chromeDriver: '../node_modules/protractor/selenium/chromedriver',
 
-  // sauceUser: 'peterhendrickoss',
-  // sauceKey: 'f255c676-818d-4162-973a-19f0be5274f2',
-  //
-  // sauceSeleniumAddress: null,
-
   specs: [
     './spec/*_spec.js',
-    // './spec/weakPassword_spec.js',
-
   ],
 
   // Patterns to exclude.
@@ -27,7 +20,7 @@ exports.config = {
     // 'browserName': 'firefox'
     // 'browserName': 'safari'
   },
-
+  //
   // multiCapabilities: [
   //   {
   //     'browserName': 'chrome',
@@ -36,10 +29,5 @@ exports.config = {
   //     'browserName': 'firefox',
   //   },
   // ],
-
-
-  onPrepare: function() {
-    exports.server = require('../server.js');
-  },
 
 };
