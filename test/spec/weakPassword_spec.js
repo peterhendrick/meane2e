@@ -16,5 +16,6 @@ describe('user signup', function (){
     element(by.id('password')).sendKeys('pass');
     element(by.id('submitButton')).click();
     expect(element(by.binding('error')).isPresent()).toBeTruthy();
+    expect(element(by.binding('error')).getText()).toEqual('Password should be longer');
   });
 });
