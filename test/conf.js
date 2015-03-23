@@ -22,20 +22,10 @@ exports.config = {
     'excludeTest_spec.js'
   ],
 
-  // suites: {
-  //   smoke: 'spec/smoketests/*.js',
-  //   full: 'spec/*.js'
-  // },
-
   capabilities: {
-    // 'browserName': 'chrome'
+    'browserName': 'chrome'
     // 'browserName': 'firefox'
     // 'browserName': 'safari'
-
-
-    // // When using phantomjs, you need to include the binary.
-    'browserName': 'phantomjs',
-    'phantomjs.binary.path': './node_modules/phantomjs2/bin/phantomjs',
   },
 
   // multiCapabilities: [
@@ -45,28 +35,11 @@ exports.config = {
   //   {
   //     'browserName': 'firefox',
   //   },
-  //
-  //   // When using phantomjs, you need to include the binary.
-  //   {
-  //     // 'browserName': 'phantomjs',
-  //     // 'phantomjs.binary.path': './node_modules/phantomjs/bin/phantomjs',
-  //   }
   // ],
 
-  // maxSessions: -1,
 
   onPrepare: function() {
-    // exports.server = require('../server.js');
+    exports.server = require('../server.js');
   },
-
-  // baseUrl: 'http://localhost:3000',
-
-  // The timeout in milliseconds for each script run on the browser.
-  // allScriptsTimeout: 30000,
-
-  // How long to wait for a page to load.
-  // getPageTimeout: 30000,
-
-  // framework: 'jasmine',
 
 };

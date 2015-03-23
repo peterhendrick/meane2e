@@ -6,4 +6,6 @@ module.exports = {
   username: element(by.id('username')),
   password: element(by.id('password')),
   submitButton: element(by.id('submitButton')),
+  error: element(by.binding('error')),
+
 }
